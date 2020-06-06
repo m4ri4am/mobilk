@@ -8,13 +8,13 @@ class Config:
     TESTING = False
     CSRF_ENABLED = True
     SECRET_KEY = 'ay habal'
-    SQLALCHEMY_DATABASE_URI = "postgresql:///mobilk"
+    SQLALCHEMY_DATABASE_URI = "postgresql:///DbName"
 
 
 class ProductionConfig(Config):
     DEBUG = False
     
-    SQLALCHEMY_DATABASE_URI = 'postgresql://postgres:5432@localhost:5432/mobilk'
+    SQLALCHEMY_DATABASE_URI = 'postgresql://user:passwprd@localhost:5432/DbName'
 
 
 class StagingConfig(Config):
